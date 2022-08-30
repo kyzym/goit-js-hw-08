@@ -14,7 +14,6 @@ function handleInput(event) {
   savedData[name] = value;
 
   storageAPI.save('feedback-form-state', savedData);
-  console.log(savedData);
 }
 
 function initPage() {
