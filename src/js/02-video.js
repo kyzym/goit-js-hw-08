@@ -13,7 +13,7 @@ player.on(
 const time = localStorage.getItem('videoplayer-current-time');
 
 player
-  .setCurrentTime(time)
+  .setCurrentTime(time || 0.1)
   .then(function () {})
   .catch(function (error) {
     switch (error.name) {
